@@ -1,66 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Unijorge</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="navigation">
-            <img class="logo" src="images/header_logo 1.png" alt="logo-universidade">
-
-            <div class="nav-menu">
-                <div class="nav-contato">
-                    <p>A- A+</p> <!--MUDAR ISSO AQUI-->
-                    <ul class="contato">
-                        <li class="item-contato">
-                            <img src="" alt="">
-                            <a href="">Me liga</a>
-                        </li>
-                        <li class="item-contato">
-                            <img src="" alt="">
-                            <a href="">WhatsApp</a>
-                        </li>
-                    </ul>
-                
-                </div>
-               <hr>
-               <div class="nav-path-container">
-                    <ul class="nav-path">
-                        <li>
-                            <a href="">A UNIJORGE ></a>
-                        </li>
-
-                        <li>
-                            <a href="">CURSOS ></a>
-                        </li>
-
-                        <li>
-                            <a href="">FORMAS DE INGRESSO ></a>
-                        </li>
-
-                        <li>
-                            <a href="">FINANCIAMENTOS E BOLSAS ></a>
-                        </li>
-                    </ul>
-               </div>
+        <div class="top-bar">
+            <span>A- A A+</span>
+            <div class="contact-links">
+                <a href="#">Me liga</a>
+                <a href="#">Whatsapp</a>
             </div>
-            
-            <div class="nav-btn-container">
-                <div class="nav-btn-top">
-                    <button>ÁREA DO ALUNO</button>
-                    <button><img src="" alt=""> LOGIN</button>
-                </div>
-
-                <div class="nav-btn-bottom">
-                    <button>INSCREVA-SE</button>
-                    <button>SOLICITE INFORMAÇÕES</button>
-                </div>
-
+            <div class="user-links">
+                <a href="#">Área do Aluno</a>
+                <a href="#">Login</a>
             </div>
-
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Unijorge Logo">
+            </div>
+            <ul>
+                <li><a href="#">A Unijorge</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Formas de Ingresso</a></li>
+                <li><a href="#">Financiamentos e Bolsas</a></li>
+                <li><a href="#">Inscreva-se</a></li>
+                <li><a href="#">Solicite Informações</a></li>
+            </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Unijorge é destaque nacional nas avaliações do MEC</h2>
+                <p>Cursos com o maior CPC e Enade Entre as Instituições de Ensino Superior do Brasil</p>
+                <a href="#" class="btn">Saiba mais!</a>
+            </div>
+            <div class="hero-image">
+                <img src="scientists.jpg" alt="Cientistas">
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="highlight">Cursos com Nota Máxima pelo MEC - Nota 5</div>
+            <div class="highlight">Corpo Docente Qualificado - 70% Mestres e Doutores</div>
+            <div class="highlight">Melhor EAD do Brasil, Segundo MEC - CPC Contínuo 2022</div>
+            <div class="highlight">Vencedora pela 14ª no Top of Mind</div>
+        </section>
+
+        <section class="login-section">
+            <div class="login-container">
+                <h2>Login</h2>
+                <p>Olá, informe seus dados abaixo e faça seu login.</p>
+                <form action="#">
+                    <input type="text" placeholder="CPF" required>
+                    <input type="password" placeholder="Senha" required>
+                    <button type="submit">Entrar</button>
+                    <a href="#">Esqueceu a senha?</a>
+                </form>
+            </div>
+            <div class="login-image">
+                <img src="student.jpg" alt="Estudante">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><img src="youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+            <a href="#"><img src="email.png" alt="Email"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
